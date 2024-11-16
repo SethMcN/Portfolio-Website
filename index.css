@@ -33,6 +33,14 @@ p{
     text-align: center;
 }
 
+.navbar button{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
 .navbar a:hover{
     background-color: rgb(38, 39, 39);
 }
@@ -41,6 +49,7 @@ p{
     float: left;
 }
 
+/* images */ 
 .oldWebsite{
     width: 700px;
     margin-left: auto;
@@ -48,4 +57,46 @@ p{
     display: block;
     float:left;
     margin-right: 10px;
+}
+
+/* Dropdown menu */
+.dropdown{
+    display: inline-block;
+}
+
+
+.dropdown button{
+    background-color: blue;
+    color: brown;
+    padding: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: aquamarine;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .CodingLangs{
+    display: none;
+    position: absolute;
+    background-color: chocolate;
+
+    min-width: none;
+    box-shadow: 2px 2px 5px black;
+}
+
+.dropdown:hover .CodingLangs{
+    display: block;
+}
+
+.dropdown:hover button{
+     background-color: blueviolet;
+}
+
+.dropdown a:hover{
+    background-color: blue;
 }
