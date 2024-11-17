@@ -1,0 +1,10 @@
+sources:
+	coolors.co
+	
+
+home:
+
+Web:
+	screenshots of development process, chat gpt
+	hex vs hls vs other 
+

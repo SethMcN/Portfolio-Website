@@ -1,4 +1,20 @@
+/*
+hex colors:
+f2e9e4 c9ada7 9a8c98 4a4e69 22223b 
+3d5a80 98c1d9 e0fbfc ee6c4d 293241
+
+*/
+:root{
+    --NavBarColour: #1E90FF ;
+    --NavBarText: #333333 ;
+    --HoverColour: #17C3B2  ;
+    --H1Colour: #bbbbbb; 
+    --BackgroundColour: #F7F7F7;
+    --FontSize: 150%;
+}
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--BackgroundColour); 
     margin: 0px;
 }
 
@@ -7,42 +23,52 @@ main{
 }
 
 /* heading 1 */
-h1{
+
+.H1Header{
+    color: var(--H1Colour) ;
+    background-color: #22223b;
+    padding-bottom: 5px;
+    padding-top: 10px;
     text-align: center;
 }
 
 p{
-    font-size: large;
+    font-size: x-large;
     
 }
 /* Navigation bar*/
 .navbar ul{
     list-style-type: none;
-    background-color: rgb(94, 91, 91);
+    background-color: var(--NavBarColour);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 
-}
 
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
 }
 
 .navbar button{
-    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: var(--FontSize)-50;
+    font: Arial;
+}
+
+.navbar{
+    font-size: var(--FontSize);
+    font: Arial;
+}
+
+.navbar a{
+    color: var(--NavBarText);
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     display: block;
     text-align: center;
 }
 
 .navbar a:hover{
-    background-color: rgb(38, 39, 39);
+    background-color: var(--HoverColour);
 }
 
 .navbar li{
@@ -51,9 +77,8 @@ p{
 
 /* images */ 
 .oldWebsite{
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+
     display: block;
     float:left;
     margin-right: 10px;
@@ -64,18 +89,20 @@ p{
     display: inline-block;
 }
 
-
 .dropdown button{
-    background-color: blue;
-    color: brown;
-    padding: auto;
+    background-color: transparent;
+
+    color: var(--NavBarText);
+
     border: none;
     cursor: pointer;
 }
 
+
+
 .dropdown a{
     display: block;
-    color: aquamarine;
+    color: var(--NavBarText);
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -83,20 +110,29 @@ p{
 .dropdown .CodingLangs{
     display: none;
     position: absolute;
-    background-color: chocolate;
+    background-color: #219ebc;
+    border-radius: 10px;
 
     min-width: none;
     box-shadow: 2px 2px 5px black;
 }
+
+.dropdown .CodingLangs a{
+    border-radius: 10px;
+}
+
 
 .dropdown:hover .CodingLangs{
     display: block;
 }
 
 .dropdown:hover button{
-     background-color: blueviolet;
+
+
+    background-color: var(--HoverColour);
+
 }
 
 .dropdown a:hover{
-    background-color: blue;
+    background-color: #8ecae6;
 }
