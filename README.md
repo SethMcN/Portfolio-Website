@@ -6,7 +6,7 @@ This repository contains the source code and files for my personal portfolio web
 
 ## About the Website
 
-This website showcases my skills and experienc. Here, you’ll find information about my background in programming, cybersecurity, and software development.
+This website showcases my skills and experience. Here, you’ll find information about my background in programming, cybersecurity, and software development.
 
 ## Skills Highlighted
 

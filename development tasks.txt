@@ -1,10 +1,20 @@
 sources:
-	coolors.co
+  coolors.co
+
+  youtube:
+    https://youtu.be/qz0aGYrrlhU?si=8BLuz6TyJuFlju7L - 1 hour crash course HTML + CSS
+    https://youtu.be/VQWu4e6agPc?si=preneC5NCYZw10Zc - Drop down menu 
+    https://youtu.be/D3hYClaDAfU?si=umhPjiSO43Pu2y8u - Font propities 
+    https://youtu.be/f3uCSh6LIY0?si=P9AgS6RROa8iYdMz - Creating the nav bar 
 	
 
 home:
+  About:
+    currently studying 
+    qualification 
+
 
 Web:
-	screenshots of development process, chat gpt
-	hex vs hls vs other 
+  screenshots of development process, chat gpt
+  hex vs hls vs other 
 
