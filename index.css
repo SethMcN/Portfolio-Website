@@ -77,7 +77,8 @@ p{
 
 /* images */ 
 .oldWebsite{
-    width: 60%;
+    width: 50%;
+    padding: 5px;
 
     display: block;
     float:left;
