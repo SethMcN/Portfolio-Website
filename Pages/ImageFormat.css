@@ -1,0 +1,21 @@
+.firstWeb{
+    display: inline-grid;
+
+    grid-template-columns: auto auto ;
+    column-gap: 40px;
+}
+
+.firstWeb img{
+    width: 100%;
+}
+
+.webDevelop{
+    display: inline-grid;
+
+    grid-template-columns: auto auto ;
+    column-gap: 100px;
+}
+
+.webDevelop img{
+    width: 100%;
+}

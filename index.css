@@ -9,7 +9,7 @@ f2e9e4 c9ada7 9a8c98 4a4e69 22223b
     --NavBarText: #333333 ;
     --HoverColour: #17C3B2  ;
     --H1Colour: #bbbbbb; 
-    --BackgroundColour: #F7F7F7;
+    --BackgroundColour: #ddbd7946;
     --FontSize: 150%;
 }
 body{
@@ -40,10 +40,11 @@ p{
 .navbar ul{
     list-style-type: none;
     background-color: var(--NavBarColour);
+    text-align: left;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-
+    
 
 }
 
@@ -64,7 +65,7 @@ p{
     text-decoration: none;
     padding: 20px;
     display: block;
-    text-align: center;
+    
 }
 
 .navbar a:hover{
@@ -75,15 +76,6 @@ p{
     float: left;
 }
 
-/* images */ 
-.oldWebsite{
-    width: 50%;
-    padding: 5px;
-
-    display: block;
-    float:left;
-    margin-right: 10px;
-}
 
 /* Dropdown menu */
 .dropdown{
