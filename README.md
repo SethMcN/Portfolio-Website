@@ -18,7 +18,7 @@ This website showcases my skills and experience. Here, you’ll find information
 
 - **About Me:** Overview of my studies, interests, and career goals.
 - **Skills:** Programming languages and technical skills.
-- **Experience:** Work experience and personal projects.
+- **Experience:** Manual labour and personal projects.
 - **Education:** Academic background and relevant coursework.
 
 ## Contact
