@@ -32,10 +32,7 @@ main{
     text-align: center;
 }
 
-p{
-    font-size: x-large;
-    
-}
+
 /* Navigation bar*/
 .navbar ul{
     list-style-type: none;

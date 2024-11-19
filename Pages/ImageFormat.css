@@ -7,15 +7,26 @@
 
 .firstWeb img{
     width: 100%;
+
 }
 
-.webDevelop{
-    display: inline-grid;
+.firstWebText{
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0.281);
 
-    grid-template-columns: auto auto ;
-    column-gap: 100px;
+}
+
+.webDevelop div{
+    text-align: center;
 }
 
 .webDevelop img{
     width: 100%;
+}
+
+.navbarPics{
+    display: inline-grid;
+
+    grid-template-columns: auto auto ;
+    column-gap: 40px;
 }
