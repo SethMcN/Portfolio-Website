@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="/images/burger.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio website</title>
@@ -14,28 +16,30 @@
     <!-- Menu bar -->
     <nav class="navbar">
         <ul>
-            <!-- pages -->
+            <!-- Links to different pages -->
             <li><a href="../index.html">Home</a></li>
             <li><a href="WebDevelopment.html">Web development</a></li>
             <li><a href="Github.html">Github</a></li>
             <li><a href="Leetcode.html">Leetcode</a></li>
 
+            <!-- Dropdown menu for coding languages -->
+            <li>
+                <div class="dropdown">
+                    <button type="button">Languages:</button>
+                    <div class="CodingLangs">
 
-            <!-- Drop down menu -->
-             
-            <div class="dropdown">
-                <button type="button">Languages:</button>
-                <div class="CodingLangs">
-                    <a href="Python.html">Python</a>
-                    <a href="javascript.html">javascript</a>
-                    <a href="java.html">java</a>                    
-                    <a href="htmlLang.html">html</a>
-                    <a href="CSS.html">CSS</a>
-                    <a href="C#.html">C#</a>
-                    <a href="C++.html">C++</a>
-                    <a href="C.html">C</a>
+                        <!-- Links to different language pages -->
+                        <a href="Languages/Python.html">Python</a>
+                        <a href="Languages/JavaScript.html">JavaScript</a>
+                        <a href="Languages/Java.html">Java</a>                    
+                        <a href="Languages/HTML.html">HTML</a>
+                        <a href="Languages/CSS.html">CSS</a>
+                        <a href="Languages/CSharp.html">C#</a>
+                        <a href="Languages/C++.html">C++</a>
+                        <a href="Languages/C.html">C</a>
+                    </div>
                 </div>
-            </div>
+            </li>
         </ul>
     </nav>
 

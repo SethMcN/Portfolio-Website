@@ -2,14 +2,13 @@
 hex colors:
 f2e9e4 c9ada7 9a8c98 4a4e69 22223b 
 3d5a80 98c1d9 e0fbfc ee6c4d 293241
-
 */
 :root{
-    --NavBarColour: #1E90FF ;
-    --NavBarText: #333333 ;
-    --HoverColour: #17C3B2  ;
-    --H1Colour: #bbbbbb; 
-    --BackgroundColour: #ddbd7946;
+    --NavBarColour: #2C3E50; /* Dark Blue */
+    --NavBarText: #ECF0F1; /* Light Gray */
+    --HoverColour: #3498DB; /* Bright Blue */
+    --H1Colour: #ECF0F1; /* Light Gray */
+    --BackgroundColour: #F5F5F5; /* Light Gray */
     --FontSize: 150%;
 }
 body{
@@ -17,23 +16,18 @@ body{
     background-color: var(--BackgroundColour); 
     margin: 0px;
 }
-
 main{
     margin: 15px;
 }
-
 /* heading 1 */
-
 .H1Header{
-    color: var(--H1Colour) ;
-    background-color: #22223b;
+    color: var(--H1Colour);
+    background-color: #34495E; /* Darker Blue */
     padding-bottom: 5px;
     padding-top: 10px;
     text-align: center;
 }
-
-
-/* Navigation bar*/
+/* Navigation bar */
 .navbar ul{
     list-style-type: none;
     background-color: var(--NavBarColour);
@@ -41,88 +35,62 @@ main{
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-    
-
 }
-
 .navbar button{
     padding-top: 20px;
     padding-left: 20px;
     font-size: var(--FontSize)-50;
     font: Arial;
 }
-
 .navbar{
     font-size: var(--FontSize);
     font: Arial;
 }
-
 .navbar a{
     color: var(--NavBarText);
     text-decoration: none;
     padding: 20px;
     display: block;
-    
 }
-
 .navbar a:hover{
     background-color: var(--HoverColour);
 }
-
 .navbar li{
     float: left;
 }
-
-
 /* Dropdown menu */
 .dropdown{
     display: inline-block;
 }
-
 .dropdown button{
     background-color: transparent;
-
     color: var(--NavBarText);
-
     border: none;
     cursor: pointer;
 }
-
-
-
 .dropdown a{
     display: block;
     color: var(--NavBarText);
     text-decoration: none;
     padding: 10px 15px;
 }
-
 .dropdown .CodingLangs{
     display: none;
     position: absolute;
-    background-color: #219ebc;
+    background-color: #3498DB; /* Bright Blue */
     border-radius: 10px;
-
     min-width: none;
     box-shadow: 2px 2px 5px black;
 }
-
 .dropdown .CodingLangs a{
     border-radius: 10px;
 }
-
-
 .dropdown:hover .CodingLangs{
     display: block;
 }
-
 .dropdown:hover button{
-
-
     background-color: var(--HoverColour);
-
 }
-
 .dropdown a:hover{
     background-color: #8ecae6;
 }

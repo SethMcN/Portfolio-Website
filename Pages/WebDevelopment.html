@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Link to the favicon image -->
+    <link rel="icon" href="/images/burger.png">
+
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web page -->
     <title>My portfolio website</title>
+    
+    <!-- Link to external CSS stylesheets -->
     <link href="../index.css" rel="stylesheet">
     <link href="ImageFormat.css" rel="stylesheet">
-
 </head>
-<body>
 
+<body>
+    <!-- Link to external JavaScript file -->
+    <script src="WebDevelopment.js"></script>
+
+    <!-- Header section with main title -->
     <div class="H1Header">
         <h1>Web Development page</h1>
     </div>
 
-
-    <!-- Menu bar -->
+    <!-- Navigation bar -->
     <nav class="navbar">
         <ul>
-            <!-- pages -->
+            <!-- Links to different pages -->
             <li><a href="../index.html">Home</a></li>
             <li><a href="WebDevelopment.html">Web development</a></li>
             <li><a href="Github.html">Github</a></li>
             <li><a href="Leetcode.html">Leetcode</a></li>
 
-            <!-- Drop down menu -->
-             
-            <div class="dropdown">
-                <button type="button">Languages:</button>
-                <div class="CodingLangs">
-                    <a href="Python.html">Python</a>
-                    <a href="javascript.html">javascript</a>
-                    <a href="java.html">java</a>                    
-                    <a href="htmlLang.html">html</a>
-                    <a href="CSS.html">CSS</a>
-                    <a href="C#.html">C#</a>
-                    <a href="C++.html">C++</a>
-                    <a href="C.html">C</a>
+            <!-- Dropdown menu for coding languages -->
+            <li>
+                <div class="dropdown">
+                    <button type="button">Languages:</button>
+                    <div class="CodingLangs">
+                        <!-- Links to different language pages -->
+                        <a href="Languages/Python.html">Python</a>
+                        <a href="Languages/JavaScript.html">JavaScript</a>
+                        <a href="Languages/Java.html">Java</a>                    
+                        <a href="Languages/HTML.html">HTML</a>
+                        <a href="Languages/CSS.html">CSS</a>
+                        <a href="Languages/CSharp.html">C#</a>
+                        <a href="Languages/C++.html">C++</a>
+                        <a href="Languages/C.html">C</a>
+                    </div>
                 </div>
-            </div>
-
+            </li>
         </ul>
     </nav>
 
+    <div id="navbar-container"></div>
 
-    <main>
-
-        <div class="firstWeb">
-            <div>
-                <img src="/images/OldWebsite/oldWebsite.png" alt="">
+        <main>
+            <!-- Section for the first website project -->
+            <div class="firstWeb">
+                <div>
+                    <!-- Image of the first website -->
+                    <img src="/images/OldWebsite/oldWebsite.png" alt="">
+                </div>
                 
+                <div class="firstWebText">
+                    <!-- Title and description of the first website project -->
+                    <h3>First Website: "I Like Burgers"</h3>
+                    <p>This is the first website I created while learning web development. The project showcases basic web design and JavaScript functionality:</p>
+                    <p>1. Nearby Burger Restaurants: A button in the center of the page, when clicked, redirects the user to Google Maps and displays nearby burger restaurants, helping users find the best spots for a meal.</p>
+                    <p>2. Drawing Board: An interactive canvas where users can draw their own burgers. The board includes:</p>
+                    <p>• A palette of colors (e.g., red, yellow, green, etc.).</p>
+                    <p>• Adjustable brush sizes ranging from "X Small" to "XX Large."</p>
+                    <p>• An eraser tool for edits.</p>
+                </div>
             </div>
-            
-            <div class="firstWebText">
+
+            <!-- Horizontal rule to separate sections -->
+            <hr>
+
+            <h2>Navigation bar development</h2>
+
+            <!-- Section for development stages of the website -->
+            <div class="navbarPics">
+                <div class="webDevelop">
+                    <!-- Images showing development stages -->
+                    <img src="/images/Website development/Screenshot 2024-11-17 022520.png"  alt="">
+                </div>
+
+                <div class="webDevelop">
+                    <img src="/images/Website development/Screenshot 2024-11-17 022757.png"  alt="">
+                </div>
                 
-                <h3>First Website: "I Like Burgers"</h3>
+                <div>
+                    <!-- Description of the first stage of development -->
+                    <p>This is how the website looked during the first stage of development, there was a simple navigation bar with links to different pages </p>
+                </div>
 
-                <p>This is the first website I created while learning web development. The project showcases basic web design and JavaScript functionality:</p>
-
-                <p>1. Nearby Burger Restaurants: A button in the center of the page, when clicked, redirects the user to Google Maps and displays nearby burger restaurants, helping users find the best spots for a meal.</p>
-
-                <p>2. Drawing Board: An interactive canvas where users can draw their own burgers. The board includes:</p>
-
-                <p>• A palette of colors (e.g., red, yellow, green, etc.).</p>
-                <p>• Adjustable brush sizes ranging from "X Small" to "XX Large."</p>
-                <p>• An eraser tool for edits.</p>
-
+                <div>
+                    <!-- Description of the addition of the dropdown menu -->
+                    <p>Next I added a drop down menu to the navigation bar for coding languages i have learnt and learning</p>
+                </div>
             </div>
-        </div>
-
-        <hr>
-        <div class="navbarPics">
-            <div class="webDevelop">
-                <img src="/images/Website development/Screenshot 2024-11-17 022520.png"  alt="">
-                
-            </div>
-
-
-            <div class="webDevelop">
-                <img src="/images/Website development/Screenshot 2024-11-17 022757.png"  alt="">
-                
-            </div>
-            
-            <div>
-                <p>This is how the website looked during the first stage of development, there was a simple navigation bar with links to different pages </p>
-            </div>
-
-
-            <div>
-                <p>Next I added a drop down menu to the navigation bar for coding languages i have learnt and learning</p>
-            </div>
-        </div>
-
-
-
-        
-    </main>
-    
+        </main>
 </body>
 </html>

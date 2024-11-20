@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<!--Language english (Good Practice)-->
+<!-- Set the document type to HTML -->
 <html lang="en">
+<!-- Set the language of the document to English -->
 
-<!-- Head is for the browser-->
 <head>
+    <!-- Metadata and links for the browser -->
+    <link rel="icon" href="/images/burger.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio website</title>
     <link href="index.css" rel="stylesheet">
 </head>
 
-<!-- Body is for the user -->
 <body>
+    <!-- Main content for the user -->
     <div class="H1Header">
         <h1>Home page</h1>
     </div>
-    <!-- Menu bar -->
-    <nav class="navbar">
 
-        <!-- ul = Unordered bulleted list-->
+    <!-- Navigation bar -->
+    <nav class="navbar">
         <ul>
-            <!-- pages -->
+            <!-- Links to different pages -->
             <li><a href="index.html">Home</a></li>
             <li><a href="Pages/WebDevelopment.html">Web development</a></li>
             <li><a href="Pages/Github.html">Github</a></li>
             <li><a href="Pages/Leetcode.html">Leetcode</a></li>
 
-            <!-- Drop down menu -->
+            <!-- Dropdown menu for coding languages -->
+            <li>
+                <div class="dropdown">
+                    <button type="button">Languages:</button>
+                    <div class="CodingLangs">
+                        <!-- Links to different language pages -->
 
-            
-            <div class="dropdown">
-                <button type="button">Languages:</button>
-                <div class="CodingLangs">
-                    <a href="Python.html">Python</a>
-                    <a href="javascript.html">javascript</a>
-                    <a href="java.html">java</a>                    
-                    <a href="htmlLang.html">html</a>
-                    <a href="CSS.html">CSS</a>
-                    <a href="C#.html">C#</a>
-                    <a href="C++.html">C++</a>
-                    <a href="C.html">C</a>
+                        <a href="Pages/Languages/Python.html">Python</a>
+                        <a href="Pages/Languages/JavaScript.html">JavaScript</a>
+                        <a href="Pages/Languages/Java.html">Java</a>                    
+                        <a href="Pages/Languages/HTML.html">HTML</a>
+                        <a href="Pages/Languages/CSS.html">CSS</a>
+                        <a href="Pages/Languages/CSharp.html">C#</a>
+                        <a href="Pages/Languages/C++.html">C++</a>
+                        <a href="Pages/Languages/C.html">C</a>
+                    </div>
                 </div>
-            </div>
+            </li>
         </ul>
-
     </nav>
 
     <main>

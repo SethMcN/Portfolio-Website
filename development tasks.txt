@@ -16,6 +16,6 @@ home:
 
 
 Web:
-  screenshots of development process, chat gpt
-  hex vs hls vs other 
+  screenshots of development process, copilot
+  
 
