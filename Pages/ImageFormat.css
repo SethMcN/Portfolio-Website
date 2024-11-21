@@ -44,8 +44,9 @@ main h2
 
 .firstWebText
 {
-    padding: 5px;
+    padding-left: 25px;
     background-color: rgba(0, 0, 255, 0.281);
+    border-radius: 5px;
 
 }
 
@@ -55,7 +56,6 @@ main h2
     text-align: center;
     background-color: #ccc;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px black;
 }
 
 .webDevelop img
