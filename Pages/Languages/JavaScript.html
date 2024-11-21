@@ -4,22 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Showcase</title>
+    <link href="../../index.css" rel="stylesheet">
     <link rel="stylesheet" href="Languages.css">
+    <link href="../../NavigationBar.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>JavaScript Projects</h1>
     </header>
+
+
+    <!-- Menu bar -->
+    <nav class="navbar">
+        <ul>
+            <!-- Links to different pages -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="WebDevelopment.html">Web development</a></li>
+            <li><a href="Github.html">Github</a></li>
+            <li><a href="Leetcode.html">Leetcode</a></li>
+
+            <!-- Dropdown menu for coding languages -->
+            <li>
+                <div class="dropdown">
+                    <button type="button">Languages:</button>
+                    <div class="CodingLangs">
+
+                        <!-- Links to different language pages -->
+                        <a href="Languages/Python.html">Python</a>
+                        <a href="Languages/JavaScript.html">JavaScript</a>
+                        <a href="Languages/Java.html">Java</a>                    
+                        <a href="Languages/HTML.html">HTML</a>
+                        <a href="Languages/CSS.html">CSS</a>
+                        <a href="Languages/CSharp.html">C#</a>
+                        <a href="Languages/C++.html">C++</a>
+                        <a href="Languages/C.html">C</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
     <main>
         <section id="project1">
             <h2>Project 1: Todo List Web Application</h2>
             <p>Description: This was my first project working with JavaScript and React. It helped me understand the basics of state management and component-based architecture. I followed a tutorial but added my own features to enhance the functionality.</p>
-            <a href="https://todo-list-seth.netlify.app">View Project</a>
+            <a id="ProjectLink" href="https://todo-list-seth.netlify.app">View Project</a>
         </section>
         <section id="project2">
             <h2>Project 2:</h2>
             <p>Description: </p>
-            <a href="projects/weather-app.html">View Project</a>
+            <a id="ProjectLink" href="projects/weather-app.html">View Project</a>
         </section>
         <!-- Add more projects as needed -->
     </main>

@@ -1,7 +1,15 @@
 /*
-hex colors:
-f2e9e4 c9ada7 9a8c98 4a4e69 22223b 
-3d5a80 98c1d9 e0fbfc ee6c4d 293241
+Color palette used in the website:
+- f2e9e4: Light Beige
+- c9ada7: Light Pink
+- 9a8c98: Light Purple
+- 4a4e69: Dark Purple
+- 22223b: Dark Blue
+- 3d5a80: Medium Blue
+- 98c1d9: Light Blue
+- e0fbfc: Very Light Blue
+- ee6c4d: Coral
+- 293241: Dark Grayish Blue
 */
 :root{
     --NavBarColour: #2C3E50; /* Dark Blue */
@@ -26,71 +34,4 @@ main{
     padding-bottom: 5px;
     padding-top: 10px;
     text-align: center;
-}
-/* Navigation bar */
-.navbar ul{
-    list-style-type: none;
-    background-color: var(--NavBarColour);
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-.navbar button{
-    padding-top: 20px;
-    padding-left: 20px;
-    font-size: var(--FontSize)-50;
-    font: Arial;
-}
-.navbar{
-    font-size: var(--FontSize);
-    font: Arial;
-}
-.navbar a{
-    color: var(--NavBarText);
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-}
-.navbar a:hover{
-    background-color: var(--HoverColour);
-}
-.navbar li{
-    float: left;
-}
-/* Dropdown menu */
-.dropdown{
-    display: inline-block;
-}
-.dropdown button{
-    background-color: transparent;
-    color: var(--NavBarText);
-    border: none;
-    cursor: pointer;
-}
-.dropdown a{
-    display: block;
-    color: var(--NavBarText);
-    text-decoration: none;
-    padding: 10px 15px;
-}
-.dropdown .CodingLangs{
-    display: none;
-    position: absolute;
-    background-color: #3498DB; /* Bright Blue */
-    border-radius: 10px;
-    min-width: none;
-    box-shadow: 2px 2px 5px black;
-}
-.dropdown .CodingLangs a{
-    border-radius: 10px;
-}
-.dropdown:hover .CodingLangs{
-    display: block;
-}
-.dropdown:hover button{
-    background-color: var(--HoverColour);
-}
-.dropdown a:hover{
-    background-color: #8ecae6;
 }

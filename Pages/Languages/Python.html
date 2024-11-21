@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Showcase</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="../../index.css" rel="stylesheet">
+    <link rel="stylesheet" href="Languages.css">
+    <link href="../../NavigationBar.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Python Projects</h1>
     </header>
+
+
+    <!-- Menu bar -->
+    <nav class="navbar">
+        <ul>
+            <!-- Links to different pages -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="WebDevelopment.html">Web development</a></li>
+            <li><a href="Github.html">Github</a></li>
+            <li><a href="Leetcode.html">Leetcode</a></li>
+
+            <!-- Dropdown menu for coding languages -->
+            <li>
+                <div class="dropdown">
+                    <button type="button">Languages:</button>
+                    <div class="CodingLangs">
+
+                        <!-- Links to different language pages -->
+                        <a href="Languages/Python.html">Python</a>
+                        <a href="Languages/JavaScript.html">JavaScript</a>
+                        <a href="Languages/Java.html">Java</a>                    
+                        <a href="Languages/HTML.html">HTML</a>
+                        <a href="Languages/CSS.html">CSS</a>
+                        <a href="Languages/CSharp.html">C#</a>
+                        <a href="Languages/C++.html">C++</a>
+                        <a href="Languages/C.html">C</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
     <main>
-        <section>
-            <h2>Project 1: Example Project</h2>
-            <p>Description of the project.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        <section id="project1">
+            <h2>Project 1: Command Line Casino</h2>
+            <p><b>Description</b>:
+                This was my first completed project, developed during my 10th and 11th years of high school. The project features a collection of games, including <b>Blackjack</b>, <b>Turtle Racing</b>, and <b>Slots</b>, each organized into separate Python files for easier development and maintenance.
+                
+                The project also includes an asset file containing essential game resources, such as a deck of cards and dice.
+                
+                To view this project, follow the link to the GitHub repository, where you'll also find attached screenshots showcasing the games in action.</p>
+            <a id="ProjectLink" href="https://github.com/SethMcN/CommandLineCasino/tree/main">View Project</a>
         </section>
-        <section>
-            <h2>Project 2: Another Project</h2>
-            <p>Description of the project.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        <section id="project2">
+            <h2>Project 2:</h2>
+            <p>Description: </p>
+            <a id="ProjectLink" href="projects/weather-app.html">View Project</a>
         </section>
         <!-- Add more projects as needed -->
     </main>
