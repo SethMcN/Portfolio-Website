@@ -1,8 +1,7 @@
 :root{
-    --NavBarSectionSize: 750px;
+    --NavBarSectionSize: 600px;
     --NavBarSectionHeight: 350px; /* Add a variable for height */
 }
-
 
 main
 {
@@ -24,6 +23,19 @@ main h2
     margin: 20px;
 
 }
+
+#navbar-container
+{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 10px;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+
 
 .firstWeb
 {
