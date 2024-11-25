@@ -1,6 +1,7 @@
 sources:
   https://www.w3schools.com/css
   coolors.co
+  https://getbootstrap.com/docs/5.3/forms/checks-radios/
 
   youtube:
     https://youtu.be/qz0aGYrrlhU?si=8BLuz6TyJuFlju7L - 1 hour crash course HTML + CSS
