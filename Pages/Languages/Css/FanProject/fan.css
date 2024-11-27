@@ -17,6 +17,19 @@
     margin-top: 20px;
 }
 
+.start,.stop{
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 100px 10px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
 .slow,.medium,.fast,.sfast{
     display: inline-block;
     background-color: #4CAF50;
@@ -42,7 +55,17 @@
 
 }
 
+.start:disabled{
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
 
+.stop:disabled{
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
 
 @keyframes spin {
     from {

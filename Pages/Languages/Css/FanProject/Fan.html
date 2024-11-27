@@ -16,9 +16,8 @@
     <div class="btn-container">
         
         <script src="rotate.js"></script>
-        <button class="Start/Stop" onclick="startFan()">Start</button>
-        <button class="Start/Stop" onclick="stopFan()">Stop</button>
-
+        <button id="start" class="start" onclick="Rotation(true)">Start</button>
+        <button id="stop" class="stop" onclick="Rotation(false)">Stop</button>
     
         <!-- radio button allows the user to only enter one option -->
         <button class="slow" onclick="setRotationSpeed('3s')">Slow</button>
@@ -28,6 +27,8 @@
         <button class="fast" onclick="setRotationSpeed('1s')">Fast</button>
         
         <button class="sfast" onclick="setRotationSpeed('.1s')">Super Fast</button>
+
+        <button class="sfast" onclick="setRotationSpeed('.01s')">Turbo</button>
 
     </div>
     
