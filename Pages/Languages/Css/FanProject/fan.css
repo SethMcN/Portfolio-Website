@@ -1,58 +1,54 @@
-#FanPic {
-    padding: 20px;
-    margin: 20px auto; /* This will center the element horizontally */
-    width: 25%; /* Adjust the width as needed */
-    height: 25%; /* Adjust the height as needed */
-    display: block; /* Ensure the element is a block-level element */
-
+#FanPic{
+    min-width: 100px;
+    width: 25%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-/* Style for the radio buttons and labels */
-.btn-check {
-    display: none;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: auto;
-    font-size: 16px;
-    cursor: pointer;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s, border-color 0.3s;
-    text-align: center; /* Center text inside the button */
-}
-
-.btn-container {
+.btn-container{
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Center the buttons vertically */
-    height: 100vh; /* Full viewport height to center vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-
-.btn:hover {
-    background-color: #e0e0e0;
-}
-
-.btn-check:checked + .btn {
-    background-color: #007bff;
+.slow,.medium,.fast,.sfast{
+    display: inline-block;
+    background-color: #4CAF50;
     color: white;
-    border-color: #007bff;
+    padding: 14px 20px;
+    margin: 100px 10px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    border-radius: 5px;
 }
-/* animation */
+
+.medium{
+    background-color: #a5c202ea;
+}
+
+.fast{
+    background-color: #eb971a;
+}
+
+.sfast {
+    background-color: red;
+
+}
+
+
+
 @keyframes spin {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+    to {
         transform: rotate(360deg);
     }
-}
-
-#FanPic {
-    animation: spin 4s linear infinite;
 }

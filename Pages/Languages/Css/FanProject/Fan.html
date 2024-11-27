@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="fan.css">
 </head>
 <body>
+    
+    <div>
+        <img id="FanPic" src="fan.png" alt="picture of very nice fan">
+    </div>
+    
     <div class="btn-container">
+        
+        <script src="rotate.js"></script>
+        <button class="Start/Stop" onclick="startFan()">Start</button>
+        <button class="Start/Stop" onclick="stopFan()">Stop</button>
+
     
-    <img id="FanPic" src="fan.png" alt="picture of very nice fan">
-    
-    <!-- radio button allows the user to only enter one option -->
-    <input type="radio" class="btn-check" name="options" id="slowSpin" autocomplete="off" checked>
-    <label class="btn btn-secondary" for="slowSpin">Slow</label>
-    
-    <input type="radio" class="btn-check" name="options" id="medSpin" autocomplete="off">
-    <label class="btn btn-secondary" for="medSpin">Medium</label>
-    
-    <input type="radio" class="btn-check" name="options" id="fastSpin" autocomplete="off">
-    <label class="btn btn-secondary" for="fastSpin">Fast</label>
-    
-    <input type="radio" class="btn-check" name="options" id="sFastSpin" autocomplete="off">
-    <label class="btn btn-secondary" for="sFastSpin">Super fast!</label>
+        <!-- radio button allows the user to only enter one option -->
+        <button class="slow" onclick="setRotationSpeed('3s')">Slow</button>
+        
+        <button class="medium" onclick="setRotationSpeed('2s')">Medium</button>
+
+        <button class="fast" onclick="setRotationSpeed('1s')">Fast</button>
+        
+        <button class="sfast" onclick="setRotationSpeed('.1s')">Super Fast</button>
 
     </div>
     
