@@ -1,51 +1,40 @@
 /* Navigation bar */
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     background-color: var(--NavBarColour);
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
 }
-.navbar button{
-    padding-top: 20px;
-    padding-left: 20px;
+.navbar button, .navbar a {
+    padding: 20px;
     font-size: calc(var(--FontSize) - 50%);
     font-family: Arial;
+    color: var(--NavBarText);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
 }
-.navbar{
+.navbar button:hover, .navbar a:hover {
+    background-color: var(--HoverColour);
+}
+.navbar {
     font-size: var(--FontSize);
     font-family: Arial;
 }
-.navbar a{
-    color: var(--NavBarText);
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-}
-.navbar a:hover{
-    background-color: var(--HoverColour);
-}
-.navbar li{
+.navbar li {
     float: left;
 }
 /* Dropdown menu */
-.dropdown{
+.dropdown {
     display: inline-block;
 }
-.dropdown button{
-    background-color: transparent;
-    color: var(--NavBarText);
-    border: none;
-    cursor: pointer;
-}
-.dropdown a{
-    display: block;
-    color: var(--NavBarText);
-    text-decoration: none;
-    padding: 10px 15px;
-}
-.dropdown .CodingLangs{
+.dropdown .CodingLangs {
     display: none;
     position: absolute;
     background-color: #3498DB; /* Bright Blue */
@@ -53,14 +42,12 @@
     min-width: 0;
     box-shadow: 2px 2px 5px black;
 }
-.dropdown .CodingLangs a{
+.dropdown .CodingLangs a {
     border-radius: 10px;
 }
-.dropdown:hover .CodingLangs{
+.dropdown:hover .CodingLangs {
     display: block;
 }
-.dropdown:hover button{
-    background-color: var(--HoverColour);
+.dropdown a:hover {
+    background-color: #8ecae6;
 }
-.dropdown a:hover{
-    background-color: #8ecae6;}
