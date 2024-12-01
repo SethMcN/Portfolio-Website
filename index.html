@@ -8,12 +8,14 @@
     <!-- Metadata and links for the browser -->
     <link rel="icon" href="/images/burger.png">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio website</title>
+    <title>My Portfolio</title>
     <link href="index.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
     <link href="NavigationBar.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="/Pages/Languages/Languages.css">
 </head>
 
 <body>
@@ -65,8 +67,38 @@
         </section>
         
         <section id="highlighted-projects">
-            <h2>Highlighted Projects</h2>
-            <p></p>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section id="project1">
+                            <h2>Project 1: Command Line Casino</h2>
+                            <p><b>Description</b>:
+                                This was my first completed project, developed during my 10th and 11th years of high school. The project features a collection of games, including <b>Blackjack</b>, <b>Turtle Racing</b>, and <b>Slots</b>, each organized into separate Python files for easier development and maintenance.
+                                
+                                The project also includes an asset file containing essential game resources, such as a deck of cards and dice.
+                                
+                                To view this project, follow the link to the GitHub repository, where you'll also find attached screenshots showcasing the games in action.</p>
+                            <a id="ProjectLink" href="https://github.com/SethMcN/CommandLineCasino/tree/main" target="_blank">View Project<a>
+                        </section>
+                        </div>
+                        <div class="carousel-item">
+                            <section id="project1">
+                                <h2>Project 1: Command Line Casino</h2>
+                                <p><b>Description</b>:
+                                    This was my first completed project, developed during my 10th and 11th years of high school. The project features a collection of games, including <b>Blackjack</b>, <b>Turtle Racing</b>, and <b>Slots</b>, each organized into separate Python files for easier development and maintenance.
+                                    
+                                    The project also includes an asset file containing essential game resources, such as a deck of cards and dice.
+                                    
+                                    To view this project, follow the link to the GitHub repository, where you'll also find attached screenshots showcasing the games in action.</p>
+                                <a id="ProjectLink" href="https://github.com/SethMcN/CommandLineCasino/tree/main" target="_blank">View Project<a>
+                            </section>
+                    </div>
+                    </div>
+                    <!-- Add more carousel items as needed -->
+                </div>
+                <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+            </div>
         </section>
 
         <section id="Github">
@@ -80,5 +112,7 @@
         </section>
 
     </main>
+
+    <script src="carousel.js"></script>
 </body>
 </html>

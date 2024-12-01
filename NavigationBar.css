@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 .navbar button, .navbar a {
     padding: 20px;
@@ -50,4 +51,14 @@
 }
 .dropdown a:hover {
     background-color: #8ecae6;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        justify-content: center; /* Align items to the start */
+    }
+    .navbar li {
+        float: none; /* Remove float */
+    }
 }
