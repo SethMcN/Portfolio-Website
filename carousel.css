@@ -30,7 +30,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 50%;
+    top: 50%; /* Center vertically */
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
     color: #fff;
@@ -54,6 +54,11 @@
     right: 10px;
 }
 
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1; /* Show controls on hover */
+}
+
 #project1 {
     margin-top: 0%;
     background-color: #f8f9fa; /* Light grey background to fit the theme */
@@ -69,14 +74,13 @@
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background-color: #007BFF;
-
     text-decoration: none;
-    border-radius: 5px;transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 .ProjectLink:hover {
     background-color: #0056b3;
-    
 }
 
 .ProjectLink a {
