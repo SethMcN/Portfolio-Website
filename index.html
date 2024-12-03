@@ -17,6 +17,8 @@
     <link href="carousel.css" rel="stylesheet">
     <link href="NavigationBar.css" rel="stylesheet">
     <link rel="stylesheet" href="/Pages/Languages/Languages.css">
+
+    <link rel="stylesheet" href="/SectionHeader.css">
     
 </head>
 
@@ -57,7 +59,16 @@
     <main>
         
         <section id="about-me">
-            <h2>About Me</h2>
+            <ul class="section-header">
+                <div >
+                    <li><h2>About Me</h2></li>
+
+                    <li><a href="https://github.com/SethMcN">GitHub</a></li>
+
+                    <li><a href="Leetcode.com">Leetcode</a></li>
+                </div> 
+            </ul>
+
             <p>Hi, I’m Seth McNaughton, a 16-year-old software enthusiast currently studying in college. I’m passionate about programming, cybersecurity, and creating efficient, innovative solutions to technical challenges.</p>
 
             <p>My journey into software development began in high school, where I excelled in Computer Science and discovered my love for coding. Since then, I’ve been exploring programming languages like Python, C#, and Java while delving into Linux systems and the exciting world of cybersecurity.</p>
@@ -107,16 +118,6 @@
                 <button class="carousel-control-prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
                 <button class="carousel-control-next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
-        </section>
-
-        <section id="Github">
-            <h2>Github Profile</h2>
-            <p></p>
-        </section>
-
-        <section id="Leetcode">
-            <h2>Leetcode Profile</h2>
-            <p></p>
         </section>
 
     </main>
