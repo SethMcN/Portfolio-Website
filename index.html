@@ -13,12 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="index.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
     <link href="carousel.css" rel="stylesheet">
     <link href="NavigationBar.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Pages/Languages/Languages.css">
-
-    <link rel="stylesheet" href="/SectionHeader.css">
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="SectionHeader.css">
     
 </head>
 
@@ -47,7 +45,7 @@
                         <a href="Pages/Languages/Java/Java.html">Java</a>                    
                         <a href="Pages/Languages/Html/HTML.html">HTML</a>
                         <a href="Pages/Languages/Css/CSS.html">CSS</a>
-                        <a href="Pages/Languages/C#/CSharp.html">C#</a>
+                        <a href="Pages/Languages/Csharp/CSharp.html">C#</a>
                         <a href="Pages/Languages/C++/C++.html">C++</a>
                         <a href="Pages/Languages/C/C.html">C</a>
                     </div>
@@ -57,68 +55,62 @@
     </nav>
 
     <main>
-        
-        <section id="about-me">
-            <ul class="section-header">
-                <div >
-                    <li><h2>About Me</h2></li>
-
-                    <li><a href="https://github.com/SethMcN">GitHub</a></li>
-
-                    <li><a href="Leetcode.com">Leetcode</a></li>
-                </div> 
-            </ul>
-
-            <p>Hi, I’m Seth McNaughton, a 16-year-old software enthusiast currently studying in college. I’m passionate about programming, cybersecurity, and creating efficient, innovative solutions to technical challenges.</p>
-
-            <p>My journey into software development began in high school, where I excelled in Computer Science and discovered my love for coding. Since then, I’ve been exploring programming languages like Python, C#, and Java while delving into Linux systems and the exciting world of cybersecurity.</p>
-                
-            <p>Right now, I’m focused on building my portfolio to showcase my skills as a developer and working on projects that highlight my ability to combine creativity with technical expertise. I’m also learning how to integrate tools like GitHub with VS Code, and I enjoy expanding my knowledge through hands-on experience.</p>
-                
-            <p>When I’m not coding, I love photography and experimenting with 3D modeling in Blender. These hobbies allow me to express my creativity and refine my problem-solving skills in different ways.</p>
-            
-        </section>
-        
-        <section id="past-work-experience">
-            <h2>Past Work Experience</h2>
-            <p></p>
-        </section>
-        
-        <section id="highlighted-projects">
-            <h2>Highlighted Projects</h2>
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <section id="project1">
-                            <h2>Project 1: Command Line Casino</h2>
-                            <p><b>Description</b>:
-                                This was my first completed project, developed during my 10th and 11th years of high school. The project features a collection of games, including <b>Blackjack</b>, <b>Turtle Racing</b>, and <b>Slots</b>, each organized into separate Python files for easier development and maintenance.
-                                
-                                The project also includes an asset file containing essential game resources, such as a deck of cards and dice.
-                                
-                                To view this project, follow the link to the GitHub repository, where you'll also find attached screenshots showcasing the games in action.</p>
-                            </section>
-                            <div class="ProjectLink">
-                                <a href="https://github.com/SethMcN/CommandLineCasino/tree/main" target="_blank">View Project<a>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <section id="project2">
-                                <h2>Project 2: Fan controller</h2>
-                                <p>Description: This project demonstrates a fan animation using JavaScript and CSS. Users can control the speed of the fan's rotation with buttons for different speed settings, including Slow, Medium, Fast, Super Fast, and Turbo. The project showcases the use of JavaScript for DOM manipulation and CSS animations.
-                                </p>
-                            </section>
-                            <div class="ProjectLink">
-                                <a href="https://github com/SethMcN  CommandLineCasino/tree    main" target="_blank">View  Project<a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more carousel items as needed -->
+        <div class="section-container">
+            <section id="about-me">
+                <div class="about-me-header">
+                    <h2>About Me</h2>
+                    <ul class="about-me-list">
+                        <li><a href="https://github.com/SethMcN" target="_blank">GitHub</a></li>
+                        <li><a href="https://leetcode.com/u/SethMcN/" target="_blank">Leetcode</a></li>
+                    </ul>
                 </div>
-                <button class="carousel-control-prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="carousel-control-next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </section>
+                <p>Hi, I’m Seth McNaughton, a 16-year-old software enthusiast currently studying in college. I’m passionate about programming, cybersecurity, and creating efficient, innovative solutions to technical challenges.
+                My journey into software development began in high school, where I excelled in Computer Science and discovered my love for coding. Since then, I’ve been exploring programming languages like Python, C#, and Java while delving into Linux systems and the exciting world of cybersecurity.
+                Right now, I’m focused on building my portfolio to showcase my skills as a developer and working on projects that highlight my ability to combine creativity with technical expertise. I’m also learning how to integrate tools like GitHub with VS Code, and I enjoy expanding my knowledge through hands-on experience.</p>
+                
+            </section>
+            
+            <section id="past-work-experience">
+                <h2>Past Work Experience</h2>
+                <p>Under development</p>
+            </section>
+            
+            <section id="highlighted-projects">
+                <h2>Highlighted Projects</h2>
+                <div class="carousel">
+                    <button class="carousel-control-prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="carousel-control-next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <section id="project1">
+                                <h3>Project 1: Command Line Casino</h3>
+                                <p><b>Description</b>:
+                                    This was my first completed project, developed during my 10th and 11th years of high school. The project features a collection of games, including <b>Blackjack</b>, <b>Turtle Racing</b>, and <b>Slots</b>, each organized into separate Python files for easier development and maintenance.
+                                    
+                                    The project also includes an asset file containing essential game resources, such as a deck of cards and dice.
+                                    
+                                    To view this project, follow the link to the GitHub repository, where you'll also find attached screenshots showcasing the games in action.</p>
+                                </section>
+                                <div class="ProjectLink">
+                                    <a href="https://github.com/SethMcN/CommandLineCasino/tree/main" target="_blank">View Project<a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <section id="project2">
+                                    <h3>Project 2: Fan controller</h3>
+                                    <p>Description: This project demonstrates a fan animation using JavaScript and CSS. Users can control the speed of the fan's rotation with buttons for different speed settings, including Slow, Medium, Fast, Super Fast, and Turbo. The project showcases the use of JavaScript for DOM manipulation and CSS animations.
+                                    </p>
+                                </section>
+                                <div class="ProjectLink">
+                                    <a href="/Pages/Languages/JavaScript/FanProject/Fan.html" target="_blank">View  Project<a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
 
     </main>
 

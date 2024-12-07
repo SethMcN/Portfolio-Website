@@ -1,41 +1,31 @@
-/* carousel.css */
+/* carousel */
 .carousel {
     position: relative;
     width: 100%;
     margin: auto;
-    overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the carousel */
-    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; 
+    border-radius: 10px; 
 }
 
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 10px; /* Add spacing between items */
+    margin-top: 2%;
 }
 
 .carousel-item {
     min-width: 100%;
-    box-sizing: border-box;
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and transform */
-    border-radius: 10px; /* Rounded corners for items */
-    overflow: hidden; /* Ensure content stays within rounded corners */
+    border-radius: 10px; 
 }
 
-.carousel-item:not(.active) {
-    opacity: 0.5; /* Adjust opacity for non-active items */
-    transform: scale(0.95); /* Slightly scale down non-active items */
-}
 
 .carousel-control-prev,
 .carousel-control-next {
-
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
     border: none;
     cursor: pointer;
     z-index: 2;
-    border-radius: 50%; /* Circular buttons */
+    border-radius: 50%; 
     width: 40px;
     height: 40px;
     display: flex;
@@ -51,28 +41,16 @@
     right: 10px;
 }
 
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next {
-    opacity: 1; /* Show controls on hover */
-}
-
-#project1 {
-    margin-top: 0%;
-    background-color: #f8f9fa; /* Light grey background to fit the theme */
-}
-
-#project2 {
-    margin-top: 0%;
-}
-
 .ProjectLink {
     display: inline-block;
-    margin-top: 1rem;
+
     padding: 0.5rem 1rem;
     background-color: #007BFF;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    margin-bottom: 1%;
+    margin-left: 1%;
+
 }
 
 .ProjectLink:hover {
@@ -80,6 +58,6 @@
 }
 
 .ProjectLink a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* White text color */
+    text-decoration: none; 
+    color: #fff; 
 }
