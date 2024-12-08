@@ -1,14 +1,16 @@
 let width = screen.width;
 
-console.log(width);
-const sectionsArr = document.getElementsByClassName('section-container');
+const sectionCssFile = document.getElementById('section-style');
 
-console.log(sectionsArr);
+function ChangeSectionCssFile() {
+    console.log('Changing section css file');
+    sectionCssFile.setAttribute('href', 'section-mobile.css');
 
 
+}
 
-if (width > 1650) { 
-    console.log('wide');
+
+if (width < 900) { 
     
-    sectionsArr[0].style.width = '70%'; 
+    ChangeSectionCssFile();
 }
