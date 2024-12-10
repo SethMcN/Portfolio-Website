@@ -1,15 +1,11 @@
-let width = screen.width;
-
-const sectionCssFile = document.getElementById('section-style');
 
 function ChangeSectionCssFile() {
-    console.log('Changing section css file');
-    sectionCssFile.setAttribute('href', 'section-mobile.css');
-
-
+    const sectionCssFile = document.getElementById('section-style').setAttribute('href', 'section-mobile.css');    
+    
 }
 
 
+let width = screen.width;
 if (width < 900) { 
     
     ChangeSectionCssFile();
