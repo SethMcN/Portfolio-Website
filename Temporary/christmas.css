@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background: black;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    animation: rainbow 4s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes rainbow {
+    0%   { color: red; }
+    20%  { color: orange; }
+    40%  { color: yellow; }
+    60%  { color: green; }
+    80%  { color: blue; }
+    100% { color: violet; }
+}
